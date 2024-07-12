@@ -7,7 +7,9 @@
 - **Delete Employee**: Search for employees by ID and delete their records with confirmation.
 - **View Employee Profile**: View detailed employee profiles.
 - **Admin Dashboard**: A centralized dashboard for managing all employee operations.
+- **Employee Dashboard**: A dedicated dashboard for employees to view and manage their own profiles.
 
+  
 ## Technologies Used
 
 - **Backend**: PHP
