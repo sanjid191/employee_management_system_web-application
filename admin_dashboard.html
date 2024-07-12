@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <h1>Admin Dashboard</h1>
+
+        <div class="button-container">
+            <button onclick="goToPage('AddEmployee.html')">Add Employee</button>
+            <button onclick="goToPage('DeleteEmployee.php')">Remove Employee</button>
+            <button onclick="goToPage('ModifyEmployeeInfo.php')">Modify Employee Info</button>
+        </div>
+
+        <div class="button-container">
+            <button onclick="goToPage('AllEmployeeData.php')">View All Records</button>
+            <button onclick="goToPage('UnderDevelopement.html')">Admin Login Log</button>
+            <button onclick="goToPage('EmployeeApplication.php')">Received Applications</button>
+        </div>
+
+        <div class="button-container">
+            <button onclick="goToPage('SendNoticeToEmployee.php')">Send Notices</button>
+            <button onclick="goToPage('AddAdmin.php')">Add Admin </button>
+            <button onclick="goToPage('login.html')">LogOut </button>
+        </div>
+        </div>
+
+        <button class="back-button" onclick="location.href='login.html'">Back</button>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
+

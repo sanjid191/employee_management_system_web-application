@@ -1,0 +1,845 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.top-right-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.top-right-buttons button {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.top-right-buttons button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-container h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.login-button {
+    background-color: #ffffff;
+    color: #2575fc;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #2575fc;
+    color: #ffffff;
+}
+
+
+/* Login Page Styles */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+}
+
+.login-container h1 {
+    font-size: 60px;
+}
+
+.login-container h1 {
+    margin-bottom: 20px;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form-group label {
+    flex: 1;
+    font-size: 25px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.form-group input,
+.form-group select {
+    flex: 2;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.login-container button {
+    background-color: #ffffff;
+    color: #2575fc;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 20px;
+}
+
+.login-container button:hover {
+    background-color: #2575fc;
+    color: #ffffff;
+}
+
+.back-button {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+
+
+/* Admin Dashboard Styles */
+.dashboard-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.dashboard-container h1 {
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button-container button {
+    background-color: #ffffff;
+    color: #2575fc;
+    border: none;
+    padding: 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    flex: 1 0 30%;
+    max-width: 200px;
+    min-width: 150px;
+    margin: 10px;
+}
+
+.button-container button:hover {
+    background-color: #2575fc;
+    color: #ffffff;
+}
+
+
+/* Add Employee Form Page Styles */
+.add_employee_form-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    margin-top: 30px;
+}
+
+.add_employee_form-container h1 {
+    margin-bottom: 20px;
+}
+
+.add_employee_form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 500px;
+}
+
+.add_employee_form-group label {
+    flex: 1;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.add_employee_form-group input,
+.add_employee_form-group select {
+    flex: 2;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: auto;
+}
+
+.add_employee_form-container button {
+    background-color: #ffffff;
+    color: #2575fc;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 20px;
+}
+
+.add_employee_form-container button:hover {
+    background-color: #2575fc;
+    color: #ffffff;
+}
+
+
+
+/* Delete Employee Form Page Styles */
+.delete_employee_container {
+    width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #fff;
+    text-align: center;
+}
+.delete_employee_form, .delete_employee_group {
+    margin-bottom: 20px;
+}
+
+.delete_employee_group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.delete_employee_group input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.delete_employee_button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #dc3545;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.delete_employee_button:hover {
+    background-color: #c82333;
+}
+
+.employee_details {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.employee_details p {
+    color: #333;
+    margin: 5px 0;
+}
+
+
+/* Modify Employee Form Page Styles */
+
+.update_employee_container {
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.update_employee_container h1{
+    color: #000000;
+}
+
+.update_employee_group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.update_employee_group label {
+    color: black;
+    font-weight: bold;
+    flex: 1;
+    margin-right: 10px;
+    text-align: right;
+}
+
+.update_employee_group input[type=text],
+.update_employee_group input[type=email] {
+    flex: 2;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.update_employee_group input[type=submit]{
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.update_employee_group input[type=submit]{
+    background-color: #45a049;
+}
+
+
+/* employee detaol */
+.employee-details {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.employee-details h2 {
+    margin-bottom: 10px;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: red;
+}
+
+.back-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    color: #2575fc;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #2575fc;
+    color: #ffffff;
+}
+
+/* View All Employee Page Styles */
+.view_all_employee_container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.view_all_employee_container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#employeeTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#employeeTable th, #employeeTable td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: left;
+}
+
+#employeeTable th {
+    color: black;
+    background-color: #cfbebe;
+}
+
+
+/* Employee Dashboard Page Styles */
+.employee_dashboard_container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    width: 900px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.employee_dashboard_container h1 {
+    margin-bottom: 20px;
+}
+
+.employee_dashboard_buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.employee_dashboard_buttons button {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1.2em;
+}
+
+.employee_dashboard_buttons button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Profile View Page Styles */
+.profile_container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.profile_header {
+    margin-bottom: 20px;
+}
+
+.profile_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile_pic img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.profile_details {
+    text-align: center;
+    width: 60%;
+    max-width: 500px;
+}
+
+.profile_details h2 {
+    color: black;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.profile_details p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+
+/* Application Page Styles */
+.application_container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.application_container h1 {
+    margin-bottom: 20px;
+}
+
+.application_form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.application_form-group label {
+    display: inline-block;
+    width: 150px;
+}
+
+.application_form-group input, .application_form-group textarea {
+    width: calc(100% - 50px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.application_form-group button {
+    padding: 10px 20px;
+    background-color: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.application_form-group button:hover {
+    background-color: #6a11cb;
+}
+
+#message {
+    margin-top: 20px;
+    color: white;
+    font-size: 1.2em;
+}
+
+
+/* about project */
+.about_project_container {
+    max-width: 1600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.header p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.content h2 {
+    font-size: 2em;
+    color: #444;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.content h2 i {
+    margin-right: 10px;
+    color: #ff6f61;
+}
+
+.content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content ul li {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #ff6f61;
+    border-radius: 5px;
+}
+
+.content ul li strong {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.content ul li p {
+    margin: 0;
+    color: #666;
+}
+
+.content p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+/* employee application */
+.view_all_applications_container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #f9f9f9;
+}
+
+.view_all_applications_container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#applicationsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+#applicationsTable th, #applicationsTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#applicationsTable th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+
+/* Developer Info Styles */
+.developer-info-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+
+.developer-profiles {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.developer-profile {
+    background-color: rgba(188, 175, 175, 0.279);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 45%;
+    margin: 10px 0;
+    
+}
+
+.developer-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.developer-details {
+    text-align: center;
+    color: rgb(3, 0, 0);
+}
+
+.developer-details h2 {
+    margin-top: 0;
+    font-size: 50px;
+}
+
+.developer-details p {
+    margin: 5px 0;
+}
+
+.developer-details a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.developer-details a:hover {
+    text-decoration: underline;
+}
+
+/* new admin adding */
+
+
+.registration-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 500px;
+    text-align: left;
+}
+
+.registration-container h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.registration_form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.registration_form-group label {
+    margin-bottom: 5px;
+}
+
+.registration_form-group input {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+.Register-button {
+    background-color: #ffffff;
+    color: #2575fc;
+    border: none;
+    padding: 5px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #6a11cb;
+}
+
+.message {
+    margin-top: 15px;
+    color: yellow;
+}
+
+
+/*employee application*/
+
+.view_all_applications_container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #546bbf;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(211, 202, 202, 0.1);
+    text-align: center;
+}
+
+.view_all_applications_container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #000000;
+}
+
+#applicationsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#applicationsTable th {
+    background-color: #007BFF;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+}
+
+#applicationsTable td {
+    padding: 10px;
+    border-bottom: 1px solid #6135ba;
+    font-size: 14px;
+    text-align: left;
+}
+
+#applicationsTable tr:nth-child(even) {
+    background-color: #22388dee;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #000000;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
